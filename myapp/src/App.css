@@ -21,6 +21,14 @@
   color: #61dafb;
 }
 
+ul > li {
+  list-style-type: none;
+  cursor: pointer;
+}
+ul > li:hover {
+  color:#0083fd;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

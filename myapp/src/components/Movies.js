@@ -3,11 +3,11 @@ class Movies extends Component {
     render() {
         const {movies} = this.props; 
         return ( 
-            <ul>
-                <li>
-                    {movies.title}
-                </li>
-            </ul>
+           
+            <li>
+                {movies.title}
+            </li>
+        
          );
     }
 }
