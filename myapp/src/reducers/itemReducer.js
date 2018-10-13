@@ -5,7 +5,7 @@ const initialState = {
   loading: false
 };
 
-function movieReducer(state = initialState, action) {
+function moviesReducer(state = initialState, action) {
   switch (action.type) {
     case GET_MOVIES:
       return {
@@ -23,6 +23,6 @@ function movieReducer(state = initialState, action) {
   }
 }
 
-export default movieReducer;
+export default moviesReducer;
 
-export const getMovieModel = state => state.movies;
+export const getMoviesModel = state => state.movies;

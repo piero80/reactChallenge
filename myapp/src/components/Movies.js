@@ -5,7 +5,18 @@ class Movies extends Component {
   render() {
     const { movies, showModal } = this.props;
     return (
-      <li onClick={() => showModal({ type: MODAL_DETAIL })}>{movies.title}</li>
+      <li
+        onClick={() =>
+          showModal({
+            type: MODAL_DETAIL,
+            props: {
+              movies: movies
+            }
+          })
+        }
+      >
+        {movies.title}
+      </li>
     );
   }
 }

@@ -22,7 +22,7 @@ const MODAL_COMPONENTS = {
 };
 
 const MODAL_TITLES = {
-  [MODAL_DETAIL]: "This is the title"
+  [MODAL_DETAIL]: "Movie Title"
   /* other modals */
 };
 

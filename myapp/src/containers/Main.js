@@ -4,7 +4,7 @@ import "../App.css";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { getMovies } from "../actions/itemActions";
-import { getMovieModel } from "../reducers/itemReducer";
+import { getMoviesModel } from "../reducers/itemReducer";
 import { Button } from "react-bootstrap";
 import { MODAL_DETAIL } from "../actions/constants";
 import { showModal } from "../actions/modalActions";
@@ -35,7 +35,7 @@ class Main extends Component {
 }
 
 const mapStateToProps = state => ({
-  movies: getMovieModel(state)
+  movies: getMoviesModel(state)
 });
 
 const mapDispatchToProps = dispatch =>

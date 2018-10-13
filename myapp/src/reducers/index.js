@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import movieReducer from "./itemReducer";
+import moviesReducer from "./itemReducer";
+import movieReducer from "./movieReducer";
 import modal from "./modalReducer";
 
 export default combineReducers({
-  movies: movieReducer,
+  movies: moviesReducer,
+  movie: movieReducer,
   modal
 });
